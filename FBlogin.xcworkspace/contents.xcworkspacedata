@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FBlogin.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <Group
+      location = "group:Pods"
+      name = "Targets Support Files">
+      <Group
+         location = "group:Pods/Target Support Files/Pods-FBlogin"
+         name = "Pods-FBlogin">
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Info.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin.modulemap">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-acknowledgements.markdown">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-acknowledgements.plist">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-dummy.m">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-frameworks.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-resources.sh">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-umbrella.h">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin.debug.xcconfig">
+         </FileRef>
+         <FileRef
+            location = "group:Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin.release.xcconfig">
+         </FileRef>
+      </Group>
+   </Group>
+</Workspace>

@@ -57,6 +57,7 @@ class ViewController: UIViewController {
                         let picURL = data["url"] as! String
                         print(name , gender , picURL)
                         
+                        //取得照片URL
                         DispatchQueue.global().async {
                             let imgData = NSData(contentsOf: URL(string: picURL)!)
                             
