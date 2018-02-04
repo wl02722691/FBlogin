@@ -13,9 +13,12 @@
 		693A8C5F20271AC100E35B38 /* FBlogin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 693A8C5D20271AC100E35B38 /* FBlogin.xcdatamodeld */; };
 		693A8C6120271AC100E35B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 693A8C6020271AC100E35B38 /* Assets.xcassets */; };
 		693A8C6420271AC100E35B38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 693A8C6220271AC100E35B38 /* LaunchScreen.storyboard */; };
+		DB10ED067B69380513DBD9AB /* Pods_FBlogin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D78A0C688AB5807B4BB87FE /* Pods_FBlogin.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50443A4F10B0FB572F260770 /* Pods-FBlogin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBlogin.release.xcconfig"; path = "Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin.release.xcconfig"; sourceTree = "<group>"; };
+		5A889167EF5D36630C4ABE36 /* Pods-FBlogin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FBlogin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin.debug.xcconfig"; sourceTree = "<group>"; };
 		693A8C5320271AC100E35B38 /* FBlogin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBlogin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		693A8C5620271AC100E35B38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		693A8C5820271AC100E35B38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		693A8C6020271AC100E35B38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		693A8C6320271AC100E35B38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		693A8C6520271AC100E35B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D78A0C688AB5807B4BB87FE /* Pods_FBlogin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FBlogin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB10ED067B69380513DBD9AB /* Pods_FBlogin.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		075EC0288CF08CA2E0C77ACF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8D78A0C688AB5807B4BB87FE /* Pods_FBlogin.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		693A8C4A20271AC100E35B38 = {
 			isa = PBXGroup;
 			children = (
 				693A8C5520271AC100E35B38 /* FBlogin */,
 				693A8C5420271AC100E35B38 /* Products */,
+				B93C3C5F78948AC9534EDBAC /* Pods */,
+				075EC0288CF08CA2E0C77ACF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +82,15 @@
 			path = FBlogin;
 			sourceTree = "<group>";
 		};
+		B93C3C5F78948AC9534EDBAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5A889167EF5D36630C4ABE36 /* Pods-FBlogin.debug.xcconfig */,
+				50443A4F10B0FB572F260770 /* Pods-FBlogin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 693A8C6820271AC100E35B38 /* Build configuration list for PBXNativeTarget "FBlogin" */;
 			buildPhases = (
+				D371965885C42AF8128AD852 /* [CP] Check Pods Manifest.lock */,
 				693A8C4F20271AC100E35B38 /* Sources */,
 				693A8C5020271AC100E35B38 /* Frameworks */,
 				693A8C5120271AC100E35B38 /* Resources */,
+				00FC743031D48550584CA046 /* [CP] Embed Pods Frameworks */,
+				9533D47B92BAF4EA39C3801C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -133,6 +160,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00FC743031D48550584CA046 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9533D47B92BAF4EA39C3801C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FBlogin/Pods-FBlogin-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D371965885C42AF8128AD852 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FBlogin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		693A8C4F20271AC100E35B38 /* Sources */ = {
@@ -276,6 +365,7 @@
 		};
 		693A8C6920271AC100E35B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5A889167EF5D36630C4ABE36 /* Pods-FBlogin.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +381,7 @@
 		};
 		693A8C6A20271AC100E35B38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 50443A4F10B0FB572F260770 /* Pods-FBlogin.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
